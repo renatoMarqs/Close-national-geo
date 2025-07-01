@@ -1,0 +1,40 @@
+.section-three{
+    border: 4px solid blue;
+}
+
+.section-three > h1{
+    grid-column: 1/4;
+}
+
+.section-three > ul{
+    grid-column: 2;
+}
+
+.section-three > ul > li > a{
+    text-decoration: none;
+    color: var(--cor2);
+    font-size: 1.1rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 7px;
+    padding-top: 5px;
+}
+
+.section-three > ul > li > a::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    background-color: var(--cor3);
+    margin-right: 7px;
+    margin-bottom: 2.5px;
+}
+
+/* Responsividade */
+@media(max-width: 650px){
+    .section-three > ul {
+        grid-column: 1/3;
+    }
+}

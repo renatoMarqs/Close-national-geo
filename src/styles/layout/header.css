@@ -1,0 +1,44 @@
+.menu {
+    background-color: var(--cor1);
+    grid-column: 2 / 5;
+    margin-bottom: 32px;
+    margin-top: 32px;
+    width: 1200px;
+}
+
+.grid-container > img {
+    width: 35%;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.menu > nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.menu > nav > ul > li > a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin-right: 10px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.875rem;
+    color: var(--cor4);
+}
+
+@media(max-width: 650px){
+    .menu {
+        grid-column: 1;
+        margin-top: initial;
+    }
+
+    .grid-container > img{
+        width: 30ww;
+        margin: 10px auto;
+    }
+}
