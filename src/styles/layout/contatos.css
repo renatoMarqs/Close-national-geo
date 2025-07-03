@@ -1,6 +1,3 @@
-.section-three{
-    border: 4px solid blue;
-}
 
 .section-three > h1{
     grid-column: 1/4;
